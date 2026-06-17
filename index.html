@@ -841,6 +841,40 @@ img{
     justify-content: center;
   }
 }
+  /* FINAL MOBILE FIXES */
+@media (max-width: 600px) {
+
+  /* Makes MANAGEMENT sharper on mobile */
+  .hero-title .outline {
+    -webkit-text-stroke: 0;
+    color: rgba(255,255,255,.16);
+    text-shadow: none;
+    filter: none;
+  }
+
+  /* Centers 30+ and 40+ side by side on phone */
+  .moto-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    text-align: center;
+    padding: 32px 18px;
+  }
+
+  .moto-stat {
+    width: 100%;
+  }
+
+  .moto-div {
+    display: none;
+  }
+
+  .moto-desc {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    text-align: left;
+  }
+}
 </style>
 </head>
 <body>
