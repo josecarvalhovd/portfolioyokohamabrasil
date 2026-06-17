@@ -33,7 +33,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:linear-gradient(to bottom,rgba(10,10,10,0.96),transparent);backdrop-filter:blur(6px)}
 .nav-logo{font-family:var(--display);font-size:20px;letter-spacing:0.06em;color:var(--white)}
 .nav-logo span{color:var(--red)}
-.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links{display:flex;gap:28px;list-:none}
 .nav-links a{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--white)}
 
@@ -787,7 +787,60 @@ img{
     max-width:88% !important;
   }
 }
+/* MOBILE HERO FIX */
+@media (max-width: 600px) {
+  nav {
+    padding: 18px 24px;
+  }
 
+  .hero {
+    padding: 110px 24px 64px;
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: clamp(58px, 18vw, 86px);
+    line-height: 0.9;
+    max-width: 100%;
+    overflow-wrap: normal;
+  }
+
+  .hero-title .outline {
+    display: block;
+    font-size: 0.82em;
+    letter-spacing: 0;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-tags {
+    max-width: 100%;
+  }
+
+  .hero-tag {
+    font-size: 8px;
+    padding: 6px 10px;
+  }
+
+  .hero-ctas {
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>
 </head>
 <body>
